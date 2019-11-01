@@ -12,12 +12,30 @@
     <form id="create-task-form" action="#" method="post">
       <label for="new-task-description">Task description:</label>
       <input type="text" id="new-task-description" name="new-task-description" placeholder="description">
+      <label for="Priority">Set Priority</label>
+      <select name="selectColor" id="selectColor">
+        <option value="black">Select Priority</option>
+        <option value="red" >High</option>
+        <option value="orange" >Medium</option>
+        <option value="green">Low</option>
+      </select>
+      <br>
+      <label for="user">User</label>
+      <input type="text" id="user" placeholder="User">
+      <label for="duration">Duration</label>
+      <input type="text" name="duration" id="duration" placeholder="Duration">
+      <label for="dueDate">Due Date</label>
+      <input type="date" id="dueDate">;
       <input type="submit" value="Create New Task">
     </form>
 
     <div id="list">
       <h2>My Todos</h2>
-      <ul id="tasks">
+      <ul id="tasksH">
+      </ul>
+      <ul id="tasksM">
+      </ul>
+      <ul id="tasksL">
       </ul>
     </div>
 
